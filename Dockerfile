@@ -41,7 +41,7 @@ RUN mkdir ./dist \
 
 # Disable cross-build for aarch64
 # Note: don't disable this, since we want to run this container on x86_64, not aarch64
-# RUN [ "cross-build-end" ]
+RUN [ "cross-build-end" ]
 
 # Copy out the generated binary
 VOLUME /dist
